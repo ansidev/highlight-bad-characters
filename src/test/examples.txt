@@ -4,7 +4,7 @@ Zero width non-joiner: ‌
 Zero width no-break space: ﻿
 Soft hyphen: ­
 Word joiner: ⁠
-Tripple dot: … 
+Triple dot: …
 Fake comma: ‚
 Normal comma: ,
 Full width semicolon: ；
@@ -13,7 +13,7 @@ Full width colon: ：
 Normal colon: :
 High carat: ˆ
 Normal carat: ^
-Forward single quote: ‘ 
+Forward single quote: ‘
 Normal acute accent: ´
 Reverse single quote: ’
 Normal backtick `
@@ -23,14 +23,14 @@ Weird double quotes: ¨
 Normal double quote: "
 Weird dash: –
 Normal dash -
-Trade mark: ™ 
+Trade mark: ™
 
 Things this plugin doesn't highlight (whitelisted by default):
 
 - Scandinavian special characters: åäöæøÄÖÅÆØ
 - Sharp s: ẞß
 - Inverted punctuation: ¡¿
-- Characters with accents: 
+- Characters with accents:
 ÄäÀàÁáÂâÃãÅåǍǎĄąĂăÆæÇçĆćĈĉČčĎđĐďðÈèÉéÊêËëĚěĘęĜĝĢģĞğĤĥÌìÍíÎîÏïıĴĵĶķĹĺĻļŁłĽľÑñŃńŇňÖöÒòÓóÔôÕõŐőØøŒœŔŕŘřẞßŚśŜŝŞşŠšȘșŤťŢţÞþȚțÜüÙùÚúÛûŰűŨũŲųŮůŴŵÝýŸÿŶŷŹźŽžŻż
- 
+
 You can whitelist characters you don't wish to highlight in the settings
