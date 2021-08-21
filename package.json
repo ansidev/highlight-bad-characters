@@ -7,7 +7,7 @@
   "publisher": "ansidev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ansidev/highlight-bad-characters"
+    "url": "https://github.com/ansidev/vscode-highlight-bad-characters"
   },
   "engines": {
     "vscode": "^1.59.0"
