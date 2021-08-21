@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
-import { debounce } from 'lodash';
+import debounce = require('lodash.debounce');
 
-const configuration = vscode.workspace.getConfiguration('highlight-dodgy-characters');
+const configuration = vscode.workspace.getConfiguration('highlightBadCharacters');
 const badCharDecorationType = vscode.window.createTextEditorDecorationType({
   cursor: 'crosshair',
   backgroundColor: 'rgba(255,0,0,0.3)',
@@ -31,7 +31,9 @@ export function activate(context: vscode.ExtensionContext) {
   vscode.workspace.onDidChangeTextDocument(
     event => {
       const editor = vscode.window.activeTextEditor;
-      if (editor && editor.document === event.document) triggerUpdateDecorations(editor);
+      if (editor && editor.document === event.document) {
+        triggerUpdateDecorations(editor);
+      }
     },
     null,
     context.subscriptions
@@ -39,7 +41,10 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 function updateDecorations(editor: vscode.TextEditor | void) {
-  if (!editor) editor = vscode.window.activeTextEditor;
+  if (!editor) {
+    editor = vscode.window.activeTextEditor;
+  }
+
   if (editor) {
     const decorations = createDecorations(editor);
     editor.setDecorations(badCharDecorationType, decorations);
@@ -47,11 +52,11 @@ function updateDecorations(editor: vscode.TextEditor | void) {
 }
 
 export function createDecorations(editor: vscode.TextEditor): vscode.DecorationOptions[] {
-  const badCahrRegExp = new RegExp(badCharMatcher, 'gi');
+  const badCharRegExp = new RegExp(badCharMatcher, 'gi');
   const text = editor.document.getText();
   const decorations = [];
   let match;
-  while (match = badCahrRegExp.exec(text)) {
+  while (match = badCharRegExp.exec(text)) {
     const startPos = editor.document.positionAt(match.index);
     const endPos = editor.document.positionAt(match.index + match[0].length);
     const hexCharCode = match[0].charCodeAt(0).toString(16);
