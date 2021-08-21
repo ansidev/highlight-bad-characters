@@ -12,14 +12,19 @@ It highlights all the non-ascii characters, including dashes, fancy quotes and e
 
 You can override the whitelist of characters that will not be highlighted in your workspace or user settings:
 ```
-"highlight-dodgy-characters.whitelist": "´€£¡¿äàáâãåǎąăæçćĉčđďðèéêëěęĝģğĥìíîïıĵķĺļłľñńňöòóôõőøœŕřẞßśŝşšșťţþțüùúûűũųůŵýÿŷźžż"
+"highlightBadCharacters.whitelist": "´€£¡¿äàáâãåǎąăæçćĉčđďðèéêëěęĝģğĥìíîïıĵķĺļłľñńňöòóôõőøœŕřẞßśŝşšșťţþțüùúûűũųůŵýÿŷźžż"
+```
+
+Bonus: Config for Vietnamese characters
+```
+"highlightBadCharacters.whitelist": "àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ",
 ```
 
 ### Examples
 
-An example file that contains dodgy characters can be found [here](./src/test/examples.txt)
+An example file that contains dodgy characters can be found [here](./src/test/examples.txt).
 
-## Previous authors
+## Parent projects
 
 - [Highlight Dodgy Characters](https://github.com/nachocab/vscode-highlight-dodgy-characters)
 - [Highlight Bad Chars](https://github.com/WengerK/vscode-highlight-bad-chars/)

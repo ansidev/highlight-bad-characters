@@ -2,7 +2,7 @@
   "name": "highlight-bad-characters",
   "displayName": "Highlight bad characters",
   "description": "Highlight bad characters",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "publisher": "ansidev",
   "repository": {
