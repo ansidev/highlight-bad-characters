@@ -1,5 +1,7 @@
 # Highlight bad characters
 
+[![Build Status](https://dev.azure.com/ansidev0024/highlight-bad-characters/_apis/build/status/ansidev.vscode-highlight-bad-characters?branchName=main)](https://dev.azure.com/ansidev0024/highlight-bad-characters/_build/latest?definitionId=2&branchName=main)
+
 Highlight all non-ascii characters (fork from [Highlight Dodgy Characters](https://github.com/nachocab/vscode-highlight-dodgy-characters))
 
 ![Screenshot](./screenshot.png "Screenshot")
